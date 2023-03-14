@@ -57,5 +57,58 @@ Android architecture have five sections:
 
 
 # **MODUL 2**
+## **Emulator**
+Setting up emulator software:
+1. Dowload emulator from the SDK manager 
+    ![Android OS architecture](./image/installEmulator.PNG)  
+ 
+
+2. Select tool -> AVD Manager: create new Android Virtual Device
+- Some defaul vitual device was insatlled when dowload Emulator
+- Create a new virtual device: config hardware and software, settings screen resolution, screen pixel and ram or use defauls hardware offer by Android Studio.
+![Android OS architecture](./image/deviceDefaulAndroidStudioOffer.PNG)
+
+- Setting Image have Android version, it's API level and Application Binary Interface(ABI). How app machine code interact with the computer 
+![Android OS architecture](./image/SettingImageAndroidversionforEmulator.PNG)
+- Config camare settings, network settings, performance and storage of virtual device.
+- The performance section of the settings gives you three options:
+
+    + Cold boot: It will start your device as if you’re turning it on for the first time.
+
+    + Quick boot: It will remember the last state of your device and the next time you run the Android emulator it will show you the same screen.
+
+    + Snapshot: This refers to the state of the Android emulator. You get to save the state yourself and it’ll kick off from the same page the next time you run the emulator.
+
+The memory and storage section of the settings gives you options to configure the device RAM, VM heap, Internal storage and SD card.
+
+![Android OS architecture](./image/ConfigHardwareEmulator.PNG)
+ ## Resource https://developer.android.com/studio/run/managing-avds ; https://developer.android.com/studio/run/emulator-acceleration ; https://en.wikipedia.org/wiki/Android_version_history
+## **Mobile CPU**
+- A CPU is like a translator between the software and the hardware of a device. It can take high-level software instructions and translate them into native machine language that a mobile phone can understand and use to perform specific operations
+- As of now, there are three main CPU architectures used in most smartphones – ARM, ARM64 and x86. CPU types include:
+
+    - ARM: ARMv7 or armeabi
+
+    - ARM64: AArch64 or arm64
+
+    - x86: x86 or x86abi
+## **OS versions and images**
+- Some version of Android Studio
+
+![Android OS architecture](./image/SomeAndroidVesion.PNG)
+
+## **Common libraries and packages**
+- Libraries extend the capabilities of the Android software develop kit(SDK), allow yout to use code written by other developer. Libraries provide new functionales, give access to awesome functions with lesser code as developer, just need Import
+- the common libraries
+    + Image loading: avoid high memory cause by loading multiple image at the same time, Presco.
+    + <img src="./image/ImageLoadingLibFresco.PNG"  width="60%" height="30%">
+
+    + Videos: Displaying videos is usually a daunting task for developers during development. Without the use of a library, the processes and details to take care of can be too numerous to handle, ExoPlayer.
+    + <img src="./image/VideoLibExoplayer.PNG"  width="60%" height="30%">
+
+    + Networking:Nowadays, virtually every mobile app needs some sort of network communication to perform one function or another. Fortunately, there are incredible networking libraries available to help you optimize this process, Retrofit.
+    + <img src="./image/NetWorkLibRetrofit.PNG"  width="60%" height="30%">
+    
+
 
 
