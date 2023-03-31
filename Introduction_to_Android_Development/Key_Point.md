@@ -108,7 +108,24 @@ The memory and storage section of the settings gives you options to configure th
 
     + Networking:Nowadays, virtually every mobile app needs some sort of network communication to perform one function or another. Fortunately, there are incredible networking libraries available to help you optimize this process, Retrofit.
     + <img src="./image/NetWorkLibRetrofit.PNG"  width="60%" height="30%">
-    
 
 
+## **Project Structure**
 
+- Source code
+- Assets
+- Test code
+- Build configurations
+
+Some basic file:
+- Same_app: root directory
+- .gradle folder: refer to build toolkit that guides the project building process called Gradle.
+- .ideal folder: store specific project metadata, tell app how to use the data it describes. a set of configuration files containing configuration data for specific functional areas.
+- app folder: contain source code related to the project, UI,image,font, ...
+- gradle folder: relate Android build system, set of tools made available to developers to build, test, and run their application. 
+    + build.gradle: used to specify and manage the configuration options commonto all sub-projects folders.
+    + Gradlew is a file that is used by Gradle Android Studios build system. It is only created once and is updated whenever a new feature or plugin is required to build a project.
+    + local.properties : This file contains information specific to your local configuration. For example, the path to the software development kit or SDK. This is a file that you don't need to push into a version control system like GitHub because it contains sensitive local information
+    + settings.gradle : handle the various settings for projects and modules
+## **Main activity**
+- 
